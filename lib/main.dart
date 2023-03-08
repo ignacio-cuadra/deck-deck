@@ -1,4 +1,6 @@
+import 'package:deck_deck_app/deck_selector.dart';
 import 'package:deck_deck_app/decks_list.dart';
+import 'package:deck_deck_app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +13,8 @@ class DeckDeckApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'DeckDeck',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const DecksList(),
+      theme: AppTheme.define(),
+      home: const DeckSelector(),
     );
   }
 }
