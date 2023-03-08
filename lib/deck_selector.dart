@@ -1,5 +1,5 @@
+import 'package:deck_deck_app/quiz.dart';
 import 'package:deck_deck_app/theme/app_theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DeckSelector extends StatefulWidget {
@@ -22,6 +22,7 @@ class _DeckSelector extends State<DeckSelector> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
+          elevation: 0,
           title: const Text(
             "Choose a deck",
             style: TextStyle(fontSize: 16),
@@ -83,7 +84,10 @@ class _DeckSelector extends State<DeckSelector> {
                 ),
                 const Spacer(),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Quiz()));
+                  },
                   child: const Padding(
                       padding: EdgeInsets.only(
                           top: 15, bottom: 15, left: 60, right: 60),

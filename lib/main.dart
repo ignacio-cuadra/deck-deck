@@ -1,5 +1,5 @@
 import 'package:deck_deck_app/deck_selector.dart';
-import 'package:deck_deck_app/decks_list.dart';
+import 'package:deck_deck_app/quiz.dart';
 import 'package:deck_deck_app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class DeckDeckApp extends StatelessWidget {
     return MaterialApp(
       title: 'DeckDeck',
       theme: AppTheme.define(),
-      home: const DeckSelector(),
+      home: DeckSelector(),
     );
   }
 }

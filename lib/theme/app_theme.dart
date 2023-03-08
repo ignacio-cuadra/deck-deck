@@ -5,6 +5,10 @@ class AppTheme {
   static const colors = AppColors();
   static ThemeData define() {
     return ThemeData(
+      appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          elevation: 0,
+          titleTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
       primarySwatch: colors.materialBackground,
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
@@ -17,8 +21,9 @@ class AppTheme {
       fontFamily: "SFRegular",
       primaryColor: colors.primary,
       focusColor: colors.background,
-      textTheme:
-          TextTheme(bodyMedium: TextStyle(color: colors.text, fontSize: 14)),
+      textTheme: TextTheme(
+        bodyMedium: TextStyle(color: colors.text, fontSize: 14),
+      ),
     );
   }
 }
