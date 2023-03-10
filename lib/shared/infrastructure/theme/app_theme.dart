@@ -1,4 +1,4 @@
-import 'package:deck_deck_app/theme/colors.dart';
+import 'package:deck_deck_app/shared/infrastructure/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {

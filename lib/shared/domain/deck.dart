@@ -1,4 +1,4 @@
-import 'package:deck_deck_app/entities/memory_card.dart';
+import 'package:deck_deck_app/shared/domain/memory_card.dart';
 
 class Deck {
   String name;

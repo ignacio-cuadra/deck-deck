@@ -1,5 +1,5 @@
-import 'package:deck_deck_app/quiz.dart';
-import 'package:deck_deck_app/theme/app_theme.dart';
+import 'package:deck_deck_app/quiz/screens/quiz.dart';
+import 'package:deck_deck_app/shared/infrastructure/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class DeckSelector extends StatefulWidget {
@@ -36,7 +36,7 @@ class _DeckSelector extends State<DeckSelector> {
                   const Spacer(),
                   TextButton(
                       onPressed: () {},
-                      child: Icon(Icons.navigate_before, size: 64.0)),
+                      child: const Icon(Icons.navigate_before, size: 64.0)),
                   Container(
                     width: 150,
                     height: 150,
@@ -46,7 +46,7 @@ class _DeckSelector extends State<DeckSelector> {
                   ),
                   TextButton(
                       onPressed: () {},
-                      child: Icon(Icons.navigate_next, size: 64.0)),
+                      child: const Icon(Icons.navigate_next, size: 64.0)),
                   const Spacer()
                 ]),
                 const SizedBox(
@@ -86,7 +86,7 @@ class _DeckSelector extends State<DeckSelector> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Quiz()));
+                        MaterialPageRoute(builder: (context) => const Quiz()));
                   },
                   child: const Padding(
                       padding: EdgeInsets.only(
